@@ -2,358 +2,448 @@
 <html lang="pt">
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+
 <title>Casa do Aidro | Serra da Estrela</title>
 
 <style>
-:root {
-    --forest: #243b2f;
-    --sage: #8ea38b;
-    --cream: #f5f0e7;
-    --stone: #d4c8b8;
-    --wood: #a46f3e;
-    --ink: #252722;
+
+:root{
+    --forest:#243b2f;
+    --cream:#f5f0e7;
+    --wood:#a46f3e;
+    --ink:#252722;
 }
 
-* {
-    box-sizing: border-box;
+*{
+    box-sizing:border-box;
 }
 
-html {
-    scroll-behavior: smooth;
+html{
+    scroll-behavior:smooth;
 }
 
-body {
-    margin: 0;
-    font-family: Inter, "Segoe UI", Arial, sans-serif;
-    color: var(--ink);
-    background: #fff;
+body{
+    margin:0;
+    font-family:Inter,"Segoe UI",Arial,sans-serif;
+    color:var(--ink);
 }
 
-h1,
-h2,
-h3 {
-    font-family: Georgia, serif;
-    font-weight: 500;
+h1,h2,h3{
+    font-family:Georgia,serif;
+    font-weight:500;
 }
 
-a {
-    text-decoration: none;
-    color: inherit;
+a{
+    text-decoration:none;
+    color:inherit;
 }
 
 /* NAVIGATION */
 
-.nav {
-    height: 76px;
-    padding: 0 6vw;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    background: #fff;
+.nav{
+    min-height:76px;
+    padding:0 6vw;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
 }
 
-.brand {
-    font-family: Georgia, serif;
-    font-size: 26px;
-    color: var(--forest);
+.brand{
+    font:26px Georgia,serif;
+    color:var(--forest);
 }
 
-.navlinks {
-    display: flex;
-    gap: 28px;
-    align-items: center;
-    font-size: 14px;
+.navlinks{
+    display:flex;
+    gap:24px;
+    align-items:center;
+    font-size:14px;
 }
 
-.btn {
-    display: inline-block;
-    background: var(--forest);
-    color: #fff;
-    padding: 13px 22px;
-    border-radius: 3px;
+.btn{
+    display:inline-block;
+    background:var(--forest);
+    color:#fff;
+    padding:13px 22px;
+    border-radius:3px;
 }
 
 /* HERO */
 
-.hero {
-    min-height: 680px;
+.hero{
+    min-height:680px;
 
     background:
         linear-gradient(
             90deg,
-            rgba(15,27,20,.68),
+            rgba(15,27,20,.7),
             rgba(15,27,20,.08)
         ),
-        url("images/66fdce54-a845-4c24-ac16-4d452e9ae9e9.jpg")
-        center / cover no-repeat;
+        url('images/66fdce54-a845-4c24-ac16-4d452e9ae9e9.jpg')
+        center/cover;
 
-    display: flex;
-    align-items: center;
-    padding: 7vw;
-    color: #fff;
+    display:flex;
+    align-items:center;
+    padding:7vw;
+    color:#fff;
 }
 
-.hero-copy {
-    max-width: 650px;
+.hero-copy{
+    max-width:650px;
 }
 
-.eyebrow {
-    text-transform: uppercase;
-    letter-spacing: .18em;
-    font-size: 12px;
+.eyebrow{
+    text-transform:uppercase;
+    letter-spacing:.18em;
+    font-size:12px;
 }
 
-.hero h1 {
-    font-size: 68px;
-    line-height: 1.02;
-    margin: 18px 0;
+.hero h1{
+    font-size:68px;
+    line-height:1.02;
+    margin:18px 0;
 }
 
-.hero p {
-    font-size: 19px;
-    line-height: 1.6;
-    max-width: 560px;
+.hero p{
+    font-size:19px;
+    line-height:1.6;
 }
 
-/* SECTIONS */
+/* GENERAL */
 
-.section {
-    padding: 90px 7vw;
+.section{
+    padding:90px 7vw;
 }
 
 /* CASA */
 
-.intro {
-    display: grid;
-    grid-template-columns: 1fr 1.3fr;
-    gap: 70px;
-    align-items: center;
-    background: var(--cream);
+.intro{
+    display:grid;
+    grid-template-columns:1fr 1.3fr;
+    gap:70px;
+    align-items:center;
+    background:var(--cream);
 }
 
 .intro h2,
 .rooms h2,
-.experience h2 {
-    font-size: 45px;
-    margin: 10px 0 22px;
+.experience h2,
+.section-head h2,
+.region h2{
+    font-size:45px;
+    margin:10px 0 22px;
 }
 
-.intro-img {
-    height: 480px;
+.intro-img{
+    height:480px;
+
     background:
-        url("images/5e74c89d-4f7f-435c-a818-4d28e5f98f1a.jpg")
-        center / cover no-repeat;
+        url('images/5e74c89d-4f7f-435c-a818-4d28e5f98f1a.jpg')
+        center/cover;
 }
 
-.facts {
-    display: flex;
-    gap: 35px;
-    margin-top: 30px;
-    color: var(--forest);
+.facts{
+    display:flex;
+    gap:35px;
+    margin-top:30px;
+    color:var(--forest);
 }
 
-.fact b {
-    font-family: Georgia, serif;
-    font-size: 27px;
-    display: block;
+.fact b{
+    font:27px Georgia,serif;
+    display:block;
 }
 
 /* ESTADIA */
 
-.rooms {
-    text-align: center;
+.rooms{
+    text-align:center;
 }
 
-.rooms > p {
-    max-width: 690px;
-    margin: 0 auto 42px;
-    line-height: 1.7;
-    color: #62655f;
+.rooms > p,
+.section-head p{
+    max-width:720px;
+    margin:0 auto 42px;
+    line-height:1.7;
+    color:#62655f;
 }
 
-.cards {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 22px;
-    text-align: left;
+.cards,
+.experience-cards{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:22px;
+    text-align:left;
 }
 
-.card {
-    background: var(--cream);
+.card{
+    background:var(--cream);
 }
 
-.card-img {
-    height: 290px;
-    background-size: cover;
-    background-position: center;
+.card-img{
+    height:290px;
+    background-size:cover;
+    background-position:center;
 }
 
-.card-body {
-    padding: 25px;
+.card-body{
+    padding:25px;
 }
 
-.card h3 {
-    font-size: 25px;
-    margin: 0 0 10px;
+.card h3{
+    font-size:25px;
+    margin:0 0 10px;
 }
 
-/* EXPERIÊNCIA */
-
-.experience {
-    background: var(--forest);
-    color: white;
-    display: grid;
-    grid-template-columns: 1.05fr .95fr;
-    gap: 65px;
-    align-items: center;
+.card p{
+    line-height:1.6;
 }
 
-.experience p {
-    line-height: 1.75;
-    color: #e6e8e4;
+/* CASA DE CAMPO */
+
+.experience{
+    background:var(--forest);
+    color:white;
+
+    display:grid;
+    grid-template-columns:1.05fr .95fr;
+    gap:65px;
+    align-items:center;
 }
 
-.collage {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 12px;
+.experience p{
+    line-height:1.75;
+    color:#e6e8e4;
 }
 
-.collage div {
-    min-height: 210px;
-    background-size: cover;
-    background-position: center;
+.collage{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:12px;
 }
 
-.collage .wide {
-    grid-column: 1 / 3;
-    min-height: 260px;
+.collage div{
+    min-height:210px;
+    background-size:cover;
+    background-position:center;
+}
+
+.collage .wide{
+    grid-column:1/3;
+    min-height:260px;
+}
+
+/* SECTION HEADERS */
+
+.section-head{
+    text-align:center;
+    max-width:800px;
+    margin:0 auto 45px;
+}
+
+/* EXPERIENCIAS */
+
+.experience-card{
+    min-height:390px;
+    padding:28px;
+
+    display:flex;
+    flex-direction:column;
+    justify-content:flex-end;
+
+    color:white;
+
+    background-size:cover;
+    background-position:center;
+
+    position:relative;
+    overflow:hidden;
+}
+
+.experience-card:before{
+    content:"";
+    position:absolute;
+    inset:0;
+
+    background:
+        linear-gradient(
+            0deg,
+            rgba(18,32,24,.84),
+            rgba(18,32,24,.06)
+        );
+}
+
+.experience-card > *{
+    position:relative;
+}
+
+.experience-card h3{
+    font-size:28px;
+    margin:0 0 8px;
+}
+
+.experience-card p{
+    line-height:1.55;
+    margin:0;
+}
+
+/* REGIAO */
+
+.region{
+    background:var(--cream);
+}
+
+.region-grid{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:60px;
+}
+
+.region p{
+    line-height:1.75;
+}
+
+.region-list{
+    display:grid;
+    gap:12px;
+}
+
+.region-item{
+    background:#fff;
+    padding:20px 22px;
+
+    display:flex;
+    gap:15px;
+}
+
+.region-item b{
+    display:block;
+    color:var(--forest);
+    margin-bottom:4px;
+}
+
+/* COMODIDADES */
+
+.amenity-grid{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:18px;
+}
+
+.amenity{
+    border:1px solid #e8e1d7;
+    padding:24px;
+    text-align:center;
+}
+
+.amenity .icon{
+    font-size:28px;
+    margin-bottom:10px;
 }
 
 /* GALERIA */
 
-.gallery {
-    padding: 0;
-    display: grid;
-    grid-template-columns: 2fr 1fr 1fr;
-    grid-template-rows: 270px 270px;
-    gap: 8px;
+.gallery-head{
+    text-align:center;
+    padding:70px 7vw 35px;
 }
 
-.gallery div {
-    background-size: cover;
-    background-position: center;
+.gallery-head h2{
+    font-size:45px;
+    margin:10px;
 }
 
-.gallery .big {
-    grid-row: 1 / 3;
+.gallery{
+    display:grid;
+    grid-template-columns:2fr 1fr 1fr;
+    grid-template-rows:270px 270px;
+    gap:8px;
+}
+
+.gallery div{
+    background-size:cover;
+    background-position:center;
+}
+
+.gallery .big{
+    grid-row:1/3;
 }
 
 /* RESERVA */
 
-.booking {
-    text-align: center;
-    background: var(--cream);
+.booking{
+    text-align:center;
+    background:var(--cream);
 }
 
-.booking h2 {
-    font-size: 42px;
-}
-
-.booking-box {
-    max-width: 900px;
-    margin: 38px auto 0;
-    background: #fff;
-    padding: 18px;
-    box-shadow: 0 10px 30px #0001;
-
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr auto;
-    gap: 12px;
-    align-items: center;
-}
-
-.field {
-    text-align: left;
-    padding: 9px 14px;
-    border-right: 1px solid #ddd;
-}
-
-.field small {
-    display: block;
-    color: #777;
-    margin-bottom: 5px;
+.booking h2{
+    font-size:42px;
 }
 
 /* FOOTER */
 
-.footer {
-    background: #17271f;
-    color: #dbe1dc;
-    padding: 55px 7vw;
+.footer{
+    background:#17271f;
+    color:#dbe1dc;
 
-    display: flex;
-    justify-content: space-between;
-    gap: 30px;
+    padding:55px 7vw;
+
+    display:flex;
+    justify-content:space-between;
+    gap:30px;
 }
 
-.footer .brand {
-    color: #fff;
+.footer .brand{
+    color:#fff;
 }
 
-.note {
-    font-size: 12px;
-    color: #949b96;
-    max-width: 480px;
-    margin-top: 12px;
+.note{
+    font-size:12px;
+    color:#949b96;
+    margin-top:12px;
 }
 
 /* MOBILE */
 
-@media (max-width: 800px) {
+@media(max-width:800px){
 
-    .navlinks a:not(.btn) {
-        display: none;
+    .navlinks a:not(.btn){
+        display:none;
     }
 
-    .hero {
-        min-height: 560px;
-    }
-
-    .hero h1 {
-        font-size: 46px;
+    .hero h1{
+        font-size:46px;
     }
 
     .intro,
-    .experience {
-        grid-template-columns: 1fr;
+    .experience,
+    .region-grid{
+        grid-template-columns:1fr;
     }
 
-    .cards {
-        grid-template-columns: 1fr;
+    .cards,
+    .experience-cards,
+    .amenity-grid{
+        grid-template-columns:1fr;
     }
 
-    .gallery {
-        grid-template-columns: 1fr 1fr;
+    .gallery{
+        grid-template-columns:1fr 1fr;
     }
 
-    .booking-box {
-        grid-template-columns: 1fr;
-    }
-
-    .field {
-        border-right: 0;
-    }
-
-    .footer {
-        flex-direction: column;
+    .footer{
+        flex-direction:column;
     }
 }
+
 </style>
 </head>
 
 <body>
+
+
+<!-- NAVIGATION -->
 
 <header class="nav">
 
@@ -362,15 +452,39 @@ a {
     </div>
 
     <nav class="navlinks">
-        <a href="#casa">A Casa</a>
-        <a href="#estadia">Estadia</a>
-        <a href="#galeria">Galeria</a>
-        <a href="#contactos">Contactos</a>
-        <a class="btn" href="#reservar">Reservar</a>
+
+        <a href="#casa">
+            A Casa
+        </a>
+
+        <a href="#estadia">
+            Estadia
+        </a>
+
+        <a href="#experiencias">
+            Experiências
+        </a>
+
+        <a href="#regiao">
+            A Região
+        </a>
+
+        <a href="#galeria">
+            Galeria
+        </a>
+
+        <a
+            class="btn"
+            href="#reservar">
+            Reservar
+        </a>
+
     </nav>
 
 </header>
 
+
+<!-- HERO -->
 
 <section class="hero">
 
@@ -391,7 +505,9 @@ a {
             estadia serena no coração da serra.
         </p>
 
-        <a class="btn" href="#reservar">
+        <a
+            class="btn"
+            href="#reservar">
             Descobrir disponibilidade
         </a>
 
@@ -400,22 +516,31 @@ a {
 </section>
 
 
-<section id="casa" class="section intro">
+<!-- A CASA -->
+
+<section
+    id="casa"
+    class="section intro">
 
     <div>
 
-        <div class="eyebrow" style="color:var(--wood)">
+        <div
+            class="eyebrow"
+            style="color:var(--wood)">
+
             A essência da casa
+
         </div>
 
         <h2>
-            Uma casa com memória, preparada para ficar.
+            Uma casa com memória,
+            preparada para ficar.
         </h2>
 
         <p>
-            O conceito visual tira partido dos elementos mais fortes
-            da casa: paredes de granito, madeira natural, lareira,
-            luz abundante e interiores claros.
+            A pedra, a madeira natural e os espaços interiores
+            acolhedores dão à Casa do Aidro uma identidade
+            genuinamente rural.
         </p>
 
         <div class="facts">
@@ -444,10 +569,18 @@ a {
 </section>
 
 
-<section id="estadia" class="section rooms">
+<!-- ESTADIA -->
 
-    <div class="eyebrow" style="color:var(--wood)">
+<section
+    id="estadia"
+    class="section rooms">
+
+    <div
+        class="eyebrow"
+        style="color:var(--wood)">
+
         A estadia
+
     </div>
 
     <h2>
@@ -455,25 +588,35 @@ a {
     </h2>
 
     <p>
-        Uma casa de campo acolhedora para descobrir a Serra da Estrela
-        com conforto, tranquilidade e autonomia.
+        Uma casa de campo acolhedora para descobrir a
+        Serra da Estrela com conforto, tranquilidade
+        e autonomia.
     </p>
 
+
     <div class="cards">
+
+
+        <!-- QUARTO -->
 
         <article class="card">
 
             <div
                 class="card-img"
-                style="background-image:url('images/2c7c54f2-0d7c-474f-8f18-874d280c8f67.jpg')">
+                style="
+                background-image:
+                url('images/2c7c54f2-0d7c-474f-8f18-874d280c8f67.jpg');
+                ">
             </div>
 
             <div class="card-body">
 
-                <h3>Quartos tranquilos</h3>
+                <h3>
+                    Quartos tranquilos
+                </h3>
 
                 <p>
-                    Madeira quente, roupa de cama em tons naturais
+                    Madeira quente, tons naturais
                     e uma atmosfera acolhedora.
                 </p>
 
@@ -482,20 +625,27 @@ a {
         </article>
 
 
+        <!-- SALA -->
+
         <article class="card">
 
             <div
                 class="card-img"
-                style="background-image:url('images/b67361e7-1e02-4192-9b08-9a4efcd3830f.jpg')">
+                style="
+                background-image:
+                url('images/b67361e7-1e02-4192-9b08-9a4efcd3830f.jpg');
+                ">
             </div>
 
             <div class="card-body">
 
-                <h3>Convívio junto à lareira</h3>
+                <h3>
+                    Convívio junto à lareira
+                </h3>
 
                 <p>
-                    Uma sala onde a pedra recuperada e o mobiliário
-                    contemporâneo convivem de forma natural.
+                    Pedra recuperada e espaços preparados
+                    para desfrutar sem pressa.
                 </p>
 
             </div>
@@ -503,20 +653,27 @@ a {
         </article>
 
 
+        <!-- COZINHA -->
+
         <article class="card">
 
             <div
                 class="card-img"
-                style="background-image:url('images/d6df5af0-922b-4484-95bd-077bb20ebaec.jpg')">
+                style="
+                background-image:
+                url('images/d6df5af0-922b-4484-95bd-077bb20ebaec.jpg');
+                ">
             </div>
 
             <div class="card-body">
 
-                <h3>Autonomia e conforto</h3>
+                <h3>
+                    Autonomia e conforto
+                </h3>
 
                 <p>
-                    Cozinha equipada e zona de refeições para
-                    estadias com maior independência.
+                    Cozinha equipada e zona de refeições
+                    para maior independência.
                 </p>
 
             </div>
@@ -527,6 +684,8 @@ a {
 
 </section>
 
+
+<!-- AUTENTICIDADE -->
 
 <section class="section experience">
 
@@ -534,23 +693,37 @@ a {
 
         <div
             class="wide"
-            style="background-image:url('images/21c082a9-282c-446f-86fc-8fabfbaee161.jpg')">
+            style="
+            background-image:
+            url('images/21c082a9-282c-446f-86fc-8fabfbaee161.jpg');
+            ">
         </div>
 
         <div
-            style="background-image:url('images/f054e508-2f32-4685-bf4a-8f81bc568f04.jpg')">
+            style="
+            background-image:
+            url('images/f054e508-2f32-4685-bf4a-8f81bc568f04.jpg');
+            ">
         </div>
 
         <div
-            style="background-image:url('images/8fe8bf72-6632-422d-8c40-39c6ceb6bd25.jpg')">
+            style="
+            background-image:
+            url('images/8fe8bf72-6632-422d-8c40-39c6ceb6bd25.jpg');
+            ">
         </div>
 
     </div>
 
+
     <div>
 
-        <div class="eyebrow" style="color:#c7a77b">
+        <div
+            class="eyebrow"
+            style="color:#c7a77b">
+
             Casa de campo
+
         </div>
 
         <h2>
@@ -558,14 +731,15 @@ a {
         </h2>
 
         <p>
-            A Casa do Aidro combina o carácter da construção tradicional
-            em pedra com interiores confortáveis e espaços preparados
-            para desfrutar de uma estadia tranquila.
+            A Casa do Aidro combina o carácter da construção
+            tradicional com espaços preparados para uma
+            estadia tranquila.
         </p>
 
         <p>
-            Um ponto de partida para explorar a Serra da Estrela,
-            descansar e aproveitar o ritmo mais tranquilo da região.
+            Um ponto de partida para explorar a serra
+            e regressar ao final do dia a um ambiente
+            acolhedor.
         </p>
 
     </div>
@@ -573,36 +747,373 @@ a {
 </section>
 
 
-<section id="galeria" class="gallery">
+<!-- EXPERIENCIAS -->
 
-    <div
-        class="big"
-        style="background-image:url('images/59930262-4297-4617-81cf-3ea0c81ad797.jpg')">
+<section
+    id="experiencias"
+    class="section">
+
+    <div class="section-head">
+
+        <div
+            class="eyebrow"
+            style="color:var(--wood)">
+
+            Viver a serra
+
+        </div>
+
+        <h2>
+            Experiências para todos os ritmos
+        </h2>
+
+        <p>
+            Natureza, caminhadas e gastronomia fazem da região
+            um destino para visitar durante todo o ano.
+        </p>
+
     </div>
 
-    <div
-        style="background-image:url('images/7b65acd3-814e-41ca-aec2-f7d2876ea40c.jpg')">
-    </div>
 
-    <div
-        style="background-image:url('images/d7abfb5c-9a9b-430b-a633-40be27acf6dc.jpg')">
-    </div>
+    <div class="experience-cards">
 
-    <div
-        style="background-image:url('images/e1a5b6bc-5f2d-4fae-8430-927bc45186b6.jpg')">
-    </div>
 
-    <div
-        style="background-image:url('images/f3fb4146-0127-4973-9a72-8613299e6126.jpg')">
+        <!-- NATUREZA -->
+
+        <article
+            class="experience-card"
+            style="
+            background-image:
+            url('images/910db669-f08a-4ed7-9029-306bc0da3d16.jpg');
+            ">
+
+            <h3>
+                Serra e natureza
+            </h3>
+
+            <p>
+                Paisagens de montanha,
+                miradouros e dias ao ar livre.
+            </p>
+
+        </article>
+
+
+        <!-- CAMINHADAS -->
+
+        <article
+            class="experience-card"
+            style="
+            background-image:
+            url('images/62265d4b-812a-4199-8509-8ab4c236dd07.jpg');
+            ">
+
+            <h3>
+                Caminhar e descobrir
+            </h3>
+
+            <p>
+                Explore caminhos e percursos
+                da região ao seu próprio ritmo.
+            </p>
+
+        </article>
+
+
+        <!-- GASTRONOMIA -->
+
+        <article
+            class="experience-card"
+            style="
+            background-image:
+            url('images/b05345df-3838-4986-a57d-73a522194ce0.jpg');
+            ">
+
+            <h3>
+                Sabores locais
+            </h3>
+
+            <p>
+                Descubra produtos, cozinha e tradições
+                que fazem parte da identidade da serra.
+            </p>
+
+        </article>
+
     </div>
 
 </section>
 
 
-<section id="reservar" class="section booking">
+<!-- REGIAO -->
 
-    <div class="eyebrow" style="color:var(--wood)">
+<section
+    id="regiao"
+    class="section region">
+
+    <div class="region-grid">
+
+
+        <div>
+
+            <div
+                class="eyebrow"
+                style="color:var(--wood)">
+
+                Explore a região
+
+            </div>
+
+            <h2>
+                Há muito para descobrir.
+            </h2>
+
+            <p>
+                Natureza, património e experiências
+                de montanha tornam a região interessante
+                nas quatro estações.
+            </p>
+
+            <p>
+                <strong>Em breve:</strong>
+                adicionaremos sugestões concretas e distâncias
+                depois de validarmos a localização e os
+                percursos por estrada.
+            </p>
+
+        </div>
+
+
+        <div class="region-list">
+
+
+            <div class="region-item">
+
+                <div>🏔️</div>
+
+                <div>
+                    <b>Serra da Estrela</b>
+                    Paisagens e natureza em altitude.
+                </div>
+
+            </div>
+
+
+            <div class="region-item">
+
+                <div>🥾</div>
+
+                <div>
+                    <b>Percursos pedestres</b>
+                    Passeios tranquilos ou dias mais ativos.
+                </div>
+
+            </div>
+
+
+            <div class="region-item">
+
+                <div>💧</div>
+
+                <div>
+                    <b>Praias fluviais</b>
+                    Uma opção para os dias mais quentes.
+                </div>
+
+            </div>
+
+
+            <div class="region-item">
+
+                <div>🏘️</div>
+
+                <div>
+                    <b>Aldeias e património</b>
+                    História e identidade da região.
+                </div>
+
+            </div>
+
+
+            <div class="region-item">
+
+                <div>🍷</div>
+
+                <div>
+                    <b>Gastronomia regional</b>
+                    Produtos e receitas tradicionais.
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- COMODIDADES -->
+
+<section class="section">
+
+    <div class="section-head">
+
+        <div
+            class="eyebrow"
+            style="color:var(--wood)">
+
+            Conforto
+
+        </div>
+
+        <h2>
+            Uma estadia sem complicações
+        </h2>
+
+    </div>
+
+
+    <div class="amenity-grid">
+
+
+        <div class="amenity">
+
+            <div class="icon">
+                🔥
+            </div>
+
+            <b>
+                Lareira
+            </b>
+
+        </div>
+
+
+        <div class="amenity">
+
+            <div class="icon">
+                🍳
+            </div>
+
+            <b>
+                Cozinha equipada
+            </b>
+
+        </div>
+
+
+        <div class="amenity">
+
+            <div class="icon">
+                🛏️
+            </div>
+
+            <b>
+                Espaços acolhedores
+            </b>
+
+        </div>
+
+
+        <div class="amenity">
+
+            <div class="icon">
+                🌲
+            </div>
+
+            <b>
+                Ambiente rural
+            </b>
+
+        </div>
+
+
+    </div>
+
+</section>
+
+
+<!-- GALERIA -->
+
+<div class="gallery-head">
+
+    <div
+        class="eyebrow"
+        style="color:var(--wood)">
+
+        Galeria
+
+    </div>
+
+    <h2>
+        Conheça a Casa do Aidro
+    </h2>
+
+</div>
+
+
+<section
+    id="galeria"
+    class="gallery">
+
+
+    <div
+        class="big"
+        style="
+        background-image:
+        url('images/59930262-4297-4617-81cf-3ea0c81ad797.jpg');
+        ">
+    </div>
+
+
+    <div
+        style="
+        background-image:
+        url('images/7b65acd3-814e-41ca-aec2-f7d2876ea40c.jpg');
+        ">
+    </div>
+
+
+    <div
+        style="
+        background-image:
+        url('images/d7abfb5c-9a9b-430b-a633-40be27acf6dc.jpg');
+        ">
+    </div>
+
+
+    <div
+        style="
+        background-image:
+        url('images/e1a5b6bc-5f2d-4fae-8430-927bc45186b6.jpg');
+        ">
+    </div>
+
+
+    <div
+        style="
+        background-image:
+        url('images/f3fb4146-0127-4973-9a72-8613299e6126.jpg');
+        ">
+    </div>
+
+
+</section>
+
+
+<!-- RESERVAR -->
+
+<section
+    id="reservar"
+    class="section booking">
+
+    <div
+        class="eyebrow"
+        style="color:var(--wood)">
+
         Reserve a sua estadia
+
     </div>
 
     <h2>
@@ -610,37 +1121,30 @@ a {
     </h2>
 
     <p>
-        Consulte a disponibilidade para a sua próxima estadia
-        na Casa do Aidro.
+        Contacte-nos para consultar disponibilidade
+        para a sua próxima estadia na Casa do Aidro.
     </p>
 
-    <div class="booking-box">
+    <p style="margin-top:30px">
 
-        <div class="field">
-            <small>Check-in</small>
-            Selecionar data
-        </div>
+        <a
+            class="btn"
+            href="#contactos">
 
-        <div class="field">
-            <small>Check-out</small>
-            Selecionar data
-        </div>
+            Consultar disponibilidade
 
-        <div class="field">
-            <small>Hóspedes</small>
-            2 hóspedes
-        </div>
-
-        <a class="btn" href="#">
-            Ver disponibilidade
         </a>
 
-    </div>
+    </p>
 
 </section>
 
 
-<footer id="contactos" class="footer">
+<!-- FOOTER -->
+
+<footer
+    id="contactos"
+    class="footer">
 
     <div>
 
@@ -654,13 +1158,25 @@ a {
 
     </div>
 
+
     <div>
-        Serra da Estrela · Portugal
+
+        A Casa · Experiências · Galeria · Contactos
+
         <br><br>
-        Instagram &nbsp; Contactos &nbsp; Reservas
+
+        Instagram · Email · Reservas
+
+        <br><br>
+
+        <span class="note">
+            © 2026 Casa do Aidro
+        </span>
+
     </div>
 
 </footer>
+
 
 </body>
 </html>
